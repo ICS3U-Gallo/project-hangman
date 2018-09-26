@@ -2,6 +2,7 @@
 
 In groups of three or four, grab a whiteboard and come up with pseudocode for hangman.
 
+## Setup and workflow
 ### Fork and add collaborators
 ### Create a group branch
 ### Edit
