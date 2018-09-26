@@ -1,1 +1,2 @@
-# assignment-hangman
+# Project: Hangman
+
