@@ -41,7 +41,9 @@ def add(a, b):      # input
 print(add(4, 6))  # you get 10
 ```
 **Input**: Two numbers, `a` and `b`.
+
 **Processing**: Adding the two numbers
+
 **Output**: Returns the sum
 
 ### Strings
