@@ -34,9 +34,9 @@ Essentially a function takes arguments(*input*), does some *processing*, then **
 
 Try this in repl.it
 ```python
-def add(a, b):
-    sum = a + b
-    return sum
+def add(a, b):      # input
+    total = a + b   # processing
+    return total    # output
   
 print(add(4, 6))  # you get 10
 ```
