@@ -29,4 +29,20 @@ This is explained in Chapter 4 of Head First: Learn to Code, or you can check ou
 Learn about using python's `in` keyword to check if something is *in* some iterable/collection. Check out this [repl.it](https://repl.it/@DanielGallo/Python-IN)
 
 ### Functions
-### string.replace()
+We will be breaking apart our game features with functions. Check out [Snakify.org - Functions](https://snakify.org/en/lessons/functions/).
+Essentially a function takes arguments(*input*), does some *processing*, then **return**s a result(*output*).
+
+Try this in repl.it
+```python
+def add(a, b):
+    sum = a + b
+    return sum
+  
+print(add(4, 6))  # you get 10
+```
+**Input**: Two numbers, `a` and `b`.
+**Processing**: Adding the two numbers
+**Output**: Returns the sum
+
+### Strings
+Checkout [Snakify - Strings](https://snakify.org/en/lessons/strings_str/). You will need to be aware of what you can do with strings.
