@@ -3,14 +3,17 @@
 In groups of three or four, grab a whiteboard and come up with pseudocode for hangman.
 
 ## Setup and workflow
-### Fork and add collaborators
+### 1. Fork and add collaborators
 - One group member must Fork my [original repository](https://github.com/ICS3U-Gallo/project-hangman).
 - That group member will go into the newly forked repo, in `Settings -> Collaborators and teams`, add your group members' GitHub usernames or associated email addresses. This will allow everyone to freely make changes on that forked repo.
-### Create a group branch
-Create a branch whose name is based on what game feature you will be working on. For example, if you are responsible for the code that checks if a guess is correct, call the branch `guess-checking` (or something).
-### Code!
+
+### 2. Create a feature branch
+Create a branch whose name is based on what game feature you will be working on. For example, if you are responsible for the code that checks if a guess is correct, call the branch `guess-checking` (or something). Every separate feature of the code must be in its own branch and have its own pull request.
+
+### 3. Code!
 Write your code **in the appropriate branch**. You will want to verify that your particular code works by coming up with test cases.
-### Submit pull request
+
+### 4. Submit pull request
 When you have verified that your code works, submit a pull request. Note: make sure you are on YOUR fork, not my original repo. At the top of the repo should have `your-user-name/project-hangman`. **Your username!**
 - In your repo, go into the `Pull requests` tab.
 - Click the green `New pull request` button.
@@ -20,6 +23,10 @@ When you have verified that your code works, submit a pull request. Note: make s
 
 ## Need to learn
 ### if, elif, else
+This is explained in Chapter 4 of Head First: Learn to Code, or you can check out [Snakify.org](https://snakify.org/en/lessons/if_then_else_conditions/).
+
 ### in
+Learn about using python's `in` keyword to check if something is *in* some iterable/collection. Check out this [repl.it](https://repl.it/@DanielGallo/Python-IN)
+
 ### Functions
 ### string.replace()
