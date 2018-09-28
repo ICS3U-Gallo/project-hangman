@@ -4,7 +4,7 @@ Computer chooses a word from a list
 word = random word
 Add the players guess into two variables based on result
 correct_guesses = " "
-worng_guesses = " "
+worng_guesses = ""
 
 loop if not solved and not dead:
   Computer displays as many underscores as the number of letters in the word
