@@ -1,6 +1,6 @@
 # Hangman (Pseudocode)
 
 ```
-Write pseudocode here, within the tripple backticks.
+Computer choices a word.
 
 ```
