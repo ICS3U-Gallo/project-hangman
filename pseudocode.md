@@ -2,7 +2,7 @@
 
 ```
 One of the players inputs a word 
-Draw the number of lines that corresponds to the number of letters in the word 
+Draw the number of lines that corresponds to the number of letters in the word, and
 draw a hangman base 
 player 2 guesses a letter
 if it's included in the word, insert the letter on the right line
