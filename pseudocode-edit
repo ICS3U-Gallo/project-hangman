@@ -1,0 +1,10 @@
+word = input()
+correct letters =stringbreaker(guess)
+no character = count(number_charater)
+there are 8 live
+for i is in tbe range of count
+  print the underscore #get the spaces later 
+  if guesses == list of any correct letters
+   correcttimes plus
+   for i in range(correcttime)
+ 
