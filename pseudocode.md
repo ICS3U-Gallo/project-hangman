@@ -7,6 +7,7 @@ output("/n/n/n")
 for i in length of string word
 if i is a space, output space
 otherwise you output an underscore
+
 Input a letter
 for i in a set of word
 if letter == i
@@ -21,6 +22,6 @@ else i != letter in the input
     add to incorrect set
     print set
     print graphic on hangman
-if hnagman == max
+if hangman == max
     print("Game Over")
 ```
