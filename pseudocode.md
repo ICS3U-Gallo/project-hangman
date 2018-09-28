@@ -4,7 +4,7 @@
 One of the players inputs a word 
 Draw the number of lines that corresponds to the number of letters in the word 
 draw a hangman base 
-play 2 guesses a letter
+player 2 guesses a letter
 if it's included in the word, insert the letter on the right line
 if not, write the letter at the bottom under the lines and add the sequencial body part: 
 1. head
