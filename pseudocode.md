@@ -2,7 +2,8 @@
 
 ```
 Generate a word
-Display letters in the word as underscore
+Display letters in the word as underscore 
+Display the platform
 Ask player for a letter
 Player chooses a letter
 Check if the letter is found in the word
