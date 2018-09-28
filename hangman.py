@@ -1,3 +1,24 @@
+def main():
+    secret_word = get_secret_word()
+    correct_guesses = ""
+    wrong_guesses = ""
+
+    while (not word_is_solved(secret_word, correct_guesses) and
+            not player_is_dead(wrong_guesses)):
+        display_platform(wrong_guesses)
+        display_letters(secret_word, correct_guesses)
+        guess = get_guess()
+
+        # HANDLE GUESS
+        # if guess is in the word, the add it to the correct guesses
+        # otherwise, add it to the incorrect guesses
+
+    if word_solved(secret_word, correct_guesses):
+        show_win_screen()
+    else:
+        show_lose_screen()
+
+
 def get_secret_word():
     """Will return a single word from a list of words.
 
@@ -69,21 +90,5 @@ def show_lose_screen():
     pass
 
 
-secret_word = get_secret_word()
-correct_guesses = ""
-wrong_guesses = ""
-
-while (not word_is_solved(secret_word, correct_guesses) and
-        not player_is_dead(wrong_guesses)):
-    display_platform(wrong_guesses)
-    display_letters(secret_word, correct_guesses)
-    guess = get_guess()
-
-    # HANDLE GUESS
-    # if guess is in the word, the add it to the correct guesses
-    # otherwise, add it to the incorrect guesses
-
-if word_solved(secret_word, correct_guesses):
-    show_win_screen()
-else:
-    show_lose_screen()
+if __name__ == "__main__":
+    main()
