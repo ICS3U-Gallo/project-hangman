@@ -1,6 +1,6 @@
 # Hangman (Pseudocode)
 
-```
-Write pseudocode here, within the tripple backticks.
+word= get a word
 
-```
+loop while is true:
+  guess = get guess
