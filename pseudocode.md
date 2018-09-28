@@ -1,6 +1,5 @@
 # Hangman (Pseudocode)
 
 ```
-Write pseudocode here, within the tripple backticks.
-
+Insert the pseudocode here.. dsdsfkda
 ```
