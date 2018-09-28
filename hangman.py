@@ -1,5 +1,3 @@
-# hangman.py 
-    
 def get_secret_word():
     """Will return a single word from a list of words.
 
@@ -36,7 +34,7 @@ def player_is_dead(wrong_guesses):
 
 def display_platform(wrong_guesses):
     """Displays (prints) hanging platform based on how many incorrect guesses.
-    
+
     Args:
         wrong_guesses (str): A string containing all wrong guesses.
     """
@@ -44,8 +42,9 @@ def display_platform(wrong_guesses):
 
 
 def display_letters(word, guesses):
-    """Displays (prints) the letter-board, underscores _ for letters not yet guessed.
-    
+    """Displays (prints) the letter-board,
+    underscores (_) for letters not yet guessed.
+
     Args:
         word (str): The secret word
         guesses (str): A string of correct guesses
@@ -55,7 +54,7 @@ def display_letters(word, guesses):
 
 def get_guess():
     """Will take the user's guess. Ensures the input is valid.
-    
+
     """
     pass
 
@@ -69,7 +68,7 @@ def show_lose_screen():
     """Will display ASCII art for a lose screen"""
     pass
 
-    
+
 secret_word = get_secret_word()
 correct_guesses = ""
 wrong_guesses = ""
@@ -79,7 +78,7 @@ while (not word_is_solved(secret_word, correct_guesses) and
     display_platform(wrong_guesses)
     display_letters(secret_word, correct_guesses)
     guess = get_guess()
-    
+
     # HANDLE GUESS
     # if guess is in the word, the add it to the correct guesses
     # otherwise, add it to the incorrect guesses
