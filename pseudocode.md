@@ -1,19 +1,18 @@
 # Hangman (Pseudocode)
 ```
-Computer chooses a word from a list
 word = random word
-Add the players guess into two variables based on result
 correct_guesses = " "
 worng_guesses = ""
 
-loop if not solved and not dead:
-  Computer displays as many underscores as the number of letters in the word
+while not solved and not dead:
   display the word.
   display the platform
 
-  Player guesses a letter
   guess = get guess
-  Check if guess is the word
+  
+  Check if guess is a word:
+      check if guess is the word: win
+      else: lose
 
   if guess is correct:
     add guess to correct_guesses
