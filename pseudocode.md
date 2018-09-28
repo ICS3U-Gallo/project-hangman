@@ -1,6 +1,18 @@
 # Hangman (Pseudocode)
 
 ```
-Write pseudocode here, within the tripple backticks.
-
+Input a word
+output("/n/n/n")
+for i in length of string word
+if i is a space, output space
+otherwise you output an underscore
+Input a letter
+for i in a set of word
+  if letter == i
+    replace all instances of i in the underscore
+    remove i from set
+else counter = 1 add; to in correct set, print set
+    print graphic on hangman
+if counter == max
+    print("Game Over")
 ```
