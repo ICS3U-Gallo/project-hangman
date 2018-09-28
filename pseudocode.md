@@ -15,10 +15,8 @@ loop if not solved and not dead:
   guess = get guess
   Check if guess is the word
 
-  Replace letter in the designated spot when right
   if guess is correct:
     add guess to correct_guesses
-  Draw updated platform when the guess is wrong.
   else:
     add guess to wrong_guesses
 
