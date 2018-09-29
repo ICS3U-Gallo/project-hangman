@@ -16,5 +16,4 @@ if wrong answers is less than 6
 else
   print, game over
   
-
 ```
