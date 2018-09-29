@@ -26,7 +26,7 @@ There will be times when your Fork (copy of my repo) will be out of date. There 
 - Go to the *original* repo,
 - Click the `Pull Requests` tab
 - Click the `New Pull Request` button
-- Click the link you can also **Compare across forks**.
+- Click the link "you can also **Compare across forks**".
 - The **right side** should be the *original* `ICS3U/project-hangman` with the branch `grade-##x`. (The branch for your specific class) This will be the class's official branch that will be more up-to-date than your fork.
 - On the **left side** you will select *your repo*. You can select the `master` branch to pull the changes into.
 - Confirm that you are (reading from left to right) taking the `grade-##x` brancho of *my* repo and putting the changes (check the arrow) into the `master` branch of *your* repo.
