@@ -43,8 +43,6 @@ def word_is_solved(word, guesses):
     Returns:
         bool: True if word is solved, False if word is not.
     """
-    assert(isinstance(word, str))
-    assert(isinstance(guesses, str))
 
     for letter_word in word:
         for letter_guess in guesses:
