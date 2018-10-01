@@ -10,10 +10,9 @@ def main():
         display_platform(wrong_guesses)
         display_letters(secret_word, correct_guesses)
         guess = get_guess()
-
-                
+   
         if len(wrong_guesses) == 0: 
-         bored0 = '''        
+         display_platform0 = '''        
                           _______________
                           |             |            
                                         |
@@ -26,9 +25,11 @@ def main():
                                         |
                                         |
                              |====================|  ''' 
+            
+            print(display_platform0)
 
         if len(wrong_guesses) == 1:
-          bored1 = '''   
+          display_platform1 = '''   
                         _______________
                         |             |
                        ____           |
@@ -42,10 +43,10 @@ def main():
                                       |
                                       |
                           |====================|  '''
-          print(bored1)
+          print(display_platform1)
 
         if len(wrong_guesses) == 2:
-          bored2 = '''   
+          display_platform2 = '''   
                         _______________
                         |             |
                        ____           |
@@ -58,10 +59,10 @@ def main():
                                       | 
                                       |
                           |====================|  '''
-          print(bored2)
+          print(display_platform2)
 
         if len(wrong_guesses) == 3:
-          bored3 = '''   
+          display_platform3 = '''   
                         _______________
                         |             |
                        ____           |
@@ -75,11 +76,10 @@ def main():
                                       |
                                       |
                           |====================|  '''
-          print(bored3)
-
+          print(display_platform3)
 
         if len(wrong_guesses) == 4:
-          bored4 = '''   
+          display_platform4 = '''   
                         _______________
                         |             |
                        ____           |
@@ -93,10 +93,10 @@ def main():
                                       |
                                       |
                           |====================|   '''
-          print(bored4)
+          print(display_platform4)
 
         if len(wrong_guesses) == 5:
-          bored5 = '''   
+          display_platform5 = '''   
                         _______________
                         |             |
                        ____           |
@@ -110,10 +110,10 @@ def main():
                       ==|             |
                                       |
                           |====================|  '''
-          print(bored5)
+          print(display_platform5)
 
         if len(wrong_guesses) == 6:
-          bored6 = '''   
+          display_platform6 = '''   
                         _______________
                         |             |
                        ____           |
@@ -127,7 +127,7 @@ def main():
                       ==||==          |
                                       |
                           |====================|  '''
-          print(bored6)
+          print(display_platform6)
 
         # if guess is a word:
             # if guess is correct:
