@@ -26,7 +26,11 @@ def get_secret_word():
         Single word from a list
     """
     import random
-    word_bank = ["Dog", "Matcha", "Brain", "Brother", "Player", "Cerebrum", "Trachea", "Fiblia", "Construct", "Construction", "Cell", "Mitochondria", "Power", "Calcium"]
+    word_bank = [
+        "Dog", "Matcha", "Brain", "Brother", "Player", "Cerebrum",
+        "Trachea", "Fiblia", "Construct", "Construction", "Cell",
+        "Mitochondria", "Power", "Calcium"
+    ]
     return random.choice(word_bank)
 
 
