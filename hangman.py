@@ -11,15 +11,28 @@ def main():
         display_letters(secret_word, correct_guesses)
         guess = get_guess()
 
-        # if guess is a word:
-            # if guess is correct:
-                # win
-            # else:
-                # lose
+  #-----------------------------------     
+    guess = input()
+word = len(guess)
+secret_word = "hello"
+secret_word_length = len(secret_word)
 
-        # HANDLE SINGLE LETTER GUESS
-        # if guess is in the word, the add it to the correct guesses
-        # otherwise, add it to the incorrect guesses
+guess_length = len(guess)
+
+
+if guess_length == secret_word_length:
+  if guess == secret_word:
+    print("win")
+  else:
+    print("try again")
+else:
+  print("try again")
+
+
+#-----------------------------------------
+    #HANDLE SINGLE LETTER GUESS
+    # if guess is in the word, then add it to the correct guess 
+    # otherwise, add it to the incorrect guesses
 
     if word_solved(secret_word, correct_guesses):
         show_win_screen()
