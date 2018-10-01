@@ -1,0 +1,4 @@
+import random
+randoms = ['apple', 'banana', 'orange', 'pear']
+secret_word = random.choice(randoms)
+print(secret_word)
