@@ -43,7 +43,12 @@ def word_is_solved(word, guesses):
     Returns:
         bool: True if word is solved, False if word is not.
     """
-    pass
+
+    for letter in word:
+        if letter not in guesses:
+           return False
+
+    return True
 
 
 def player_is_dead(wrong_guesses):
