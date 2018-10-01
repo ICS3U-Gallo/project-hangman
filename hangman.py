@@ -43,7 +43,18 @@ def word_is_solved(word, guesses):
     Returns:
         bool: True if word is solved, False if word is not.
     """
-    pass
+    assert(isinstance(word, str))
+    assert(isinstance(guesses, str))
+
+    for letter_word in word:
+        for letter_guess in guesses:
+            if letter_word == letter_guess:
+                guessed_letter = True
+        if not guessed_letter:
+            return False
+        guessed_letter = False
+
+    return True
 
 
 def player_is_dead(wrong_guesses):
