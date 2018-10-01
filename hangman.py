@@ -28,17 +28,18 @@ def get_secret_word():
     pass
 
 
-def word_is_solved(word, guesses):
-    """Will check to see if a word has been completely solved.
+def word_is_solved(word, guesses): # GROUP 0'S EDIT
+    num = 0
+    chars = 0
 
-    Args:
-        word (str): The secret word
-        guesses (str): The string containing all correct guesses
-
-    Returns:
-        bool: True if word is solved, False if word is not.
-    """
-    pass
+    for i in range(len(guesses)):
+        num = word.count(guesses[i])
+        if num > 0:
+            chars += num
+    if chars == len(word):
+        return True
+    else:
+        return False
 
 
 def player_is_dead(wrong_guesses):
