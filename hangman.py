@@ -44,13 +44,9 @@ def word_is_solved(word, guesses):
         bool: True if word is solved, False if word is not.
     """
 
-    for letter_word in word:
-        for letter_guess in guesses:
-            if letter_word == letter_guess:
-                guessed_letter = True
-        if not guessed_letter:
-            return False
-        guessed_letter = False
+    for letter in word:
+        if letter not in guesses:
+           return False
 
     return True
 
