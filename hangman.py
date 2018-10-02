@@ -82,7 +82,13 @@ def display_letters(word, guesses):
 def get_guess():
     """Will take the user's guess. Ensures the input is valid.
     """
-    pass
+
+    prompt = "Enter your guess: "
+    guess = input(prompt)
+    while len(guess) != 1 or not guess.isalpha():
+        print("Invalid guess! Please make sure your guess is a single letter. ")
+        guess = input(prompt)
+    return guess
 
 
 def show_win_screen():
