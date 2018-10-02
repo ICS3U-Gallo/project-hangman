@@ -117,21 +117,21 @@ _|__
  | / \ 
 _|__
 ''')
-    assert display_platform('s') == print('''
+assert display_platform('s') == print('''
  _____
  |  Ó
  |
  |
 _|__
 ''')
-    assert display_platform('uhe') == print('''
+assert display_platform('uhe') == print('''
  _____
  |  Ó
  | /|
  |
 _|__
 ''')
-    assert display_platform('ijufxb') == print('''
+assert display_platform('ijufxb') == print('''
  _____
  |  Ó
  | /|\ 
