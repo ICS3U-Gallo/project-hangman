@@ -54,12 +54,23 @@ def player_is_dead(wrong_guesses):
 
 
 def display_platform(wrong_guesses):
-    """Displays (prints) hanging platform based on how many incorrect guesses.
-    
-    Args:
-        wrong_guesses (str): A string containing all wrong guesses.
-    """
-    pass
+  if len(wrong_guesses)==0:
+    print(' _____'+'\n'+' |'+'\n'+' |'+'\n'+' |'+'\n'+'_|__')
+  elif len(wrong_guesses)==1:
+    print(' _____'+'\n'+' |  Ó'+'\n'+' |'+'\n'+' |'+'\n'+'_|__')
+  elif len(wrong_guesses)==2:
+    print(' _____'+'\n'+' |  Ó'+'\n'+' |  |'+'\n'+' |'+'\n'+'_|__')
+  elif len(wrong_guesses)==3:
+    print(' _____'+'\n'+' |  Ó'+'\n'+' | /|'+'\n'+' |'+'\n'+'_|__')
+  elif len(wrong_guesses)==4:
+    print(' _____'+'\n'+' |  Ó'+'\n'+' | /|\ '+'\n'+' |'+'\n'+'_|__')
+  elif len(wrong_guesses)==5:
+    print(' _____'+'\n'+' |  Ó'+'\n'+' | /|\ '+'\n'+' | /'+'\n'+'_|__')
+  else:
+    print(' _____'+'\n'+' |  Ó'+'\n'+' | /|\ '+'\n'+' | / \ '+'\n'+'_|__')
+#assert display_platform('s')==print(' _____'+'\n'+' |  Ó'+'\n'+' |'+'\n'+' |'+'\n'+'_|__')
+#assert display_platform('uhe') ==print (' _____'+'\n'+' |  Ó'+'\n'+' | /|'+'\n'+' |'+'\n'+'_|__')
+#assert display_platform('ijufxb) ==print (' _____'+'\n'+' |  Ó'+'\n'+' | /|\ '+'\n'+' | / \ '+'\n'+'_|__')
 
 
 def display_letters(word, guesses):
