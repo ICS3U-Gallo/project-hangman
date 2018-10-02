@@ -95,7 +95,7 @@ def show_win_screen():
  \______/                                                           
 """)
 
-show_win_screen()
+
 
 
 def show_lose_screen():
@@ -106,7 +106,7 @@ def show_lose_screen():
  )  /(  O )) \/ (  / (_/\(  O )\___ \ ) _)    _( (  
 (__/  \__/ \____/  \____/ \__/ (____/(____)  (_)\_) 
 """)
-show_lose_screen()                                                                                                                                                                  
+                                                                                                                                                                  
                                                                                                                 
 
 
