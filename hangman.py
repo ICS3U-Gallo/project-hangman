@@ -13,11 +13,11 @@ def main():
 
   #-----------------------------------     
    
-  if guess_length >1::
-  if guess == secret_word:
-    print("Win")
-  else:
-    print("Lose")
+  if guess_length >1:
+      if guess == secret_word:
+          print("Win")
+      else:
+          print("Lose")
    
 
 
