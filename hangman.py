@@ -25,7 +25,14 @@ def get_secret_word():
     Returns:
         Single word from a list
     """
-    pass
+    import random
+    word_bank = [
+        "Dog", "Matcha", "Brain", "Brother", "Player", "Cerebrum",
+        "Trachea", "Fiblia", "Construct", "Construction", "Cell",
+        "Mitochondria", "Power", "Calcium"
+    ]
+    return random.choice(word_bank)
+
 
 
 def word_is_solved(word, guesses):
