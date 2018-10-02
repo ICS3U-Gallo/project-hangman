@@ -179,6 +179,7 @@ def display_platform(wrong_guesses):
                           |====================|  '''
         print(display_platform6)
 
+print(display_platform(wrong_guesses))
 
 def display_letters(word, guesses):
     """Displays (prints) the letter-board,
