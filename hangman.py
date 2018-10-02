@@ -29,13 +29,12 @@ def get_secret_word():
 
 
 def word_is_solved(word, guesses): # GROUP 0'S EDIT
-    #Number of guesses[i] in word
-    num = 0
     #number of guessed characters in word
     chars = 0
 
-    for i in range(len(guesses)):
-        num = word.count(guesses[i])
+    for guess in guesses:
+        #Number of guesses[i] in word
+        num = word.count(guess)
         if num > 0:
             chars += num
     if chars == len(word):
