@@ -92,7 +92,7 @@ def get_guess():
     while len(guess) != 1 or not guess.isalpha():
         print("Invalid guess! Please make sure your guess is a single letter. ")
         guess = input(prompt)
-    return guess
+    return guess.lower()
 
 
 def show_win_screen():
