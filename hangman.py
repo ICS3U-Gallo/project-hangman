@@ -43,7 +43,7 @@ def main():
                                       |
                                       |
                           |====================|  '''
-          print(display_platform1)
+         print(display_platform1)
 
         if len(wrong_guesses) == 2:
           display_platform2 = '''   
