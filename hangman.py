@@ -11,15 +11,22 @@ def main():
         display_letters(secret_word, correct_guesses)
         guess = get_guess()
 
-        # if guess is a word:
-            # if guess is correct:
-                # win
-            # else:
-                # lose
+  #-----------------------------------     
+   
+  if guess_length >1:
+      if guess == secret_word:
+          print("Win")
+      else:
+          print("Lose")
+   
 
-        # HANDLE SINGLE LETTER GUESS
-        # if guess is in the word, the add it to the correct guesses
-        # otherwise, add it to the incorrect guesses
+
+#-----------------------------------------
+    for char in secert_word :
+     if char in secert_word :
+        print (char)
+     else, 
+        print ("lose")
 
     if word_solved(secret_word, correct_guesses):
         show_win_screen()
