@@ -12,21 +12,13 @@ def main():
         guess = get_guess()
 
   #-----------------------------------     
-    guess = input()
-word = len(guess)
-secret_word = "hello"
-secret_word_length = len(secret_word)
-
-guess_length = len(guess)
-
-
-if guess_length == secret_word_length:
+   
+  if guess_length >1::
   if guess == secret_word:
-    print("win")
+    print("Win")
   else:
-    print("try again")
-else:
-  print("try again")
+    print("Lose")
+   
 
 
 #-----------------------------------------
