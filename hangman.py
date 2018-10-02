@@ -96,7 +96,7 @@ def show_win_screen():
 
 
 def show_lose_screen():
-     """Will display ASCII art for a lose screen"""
+    """Will display ASCII art for a lose screen"""
     print("_____.___.              .__                        ._.            ___ ")
     print("\__  |   | ____  __ __  |  |   ____  ______ ____   | |     /\    /  / ")
     print(" /   |   |/  _ \|  |  \ |  |  /  _ \/  ___// __ \  | |     \/   /  /  ")
