@@ -59,20 +59,24 @@ def display_platform(wrong_guesses):
     Args:
         wrong_guesses (str): A string containing all wrong guesses.
     """
-    if len(wrong_guesses)==0:
+
+    if len(wrong_guesses) == 0:
         print(' _____'+'\n'+' |'+'\n'+' |'+'\n'+' |'+'\n'+'_|__')
-    elif len(wrong_guesses)==1:
+    elif len(wrong_guesses) == 1:
         print(' _____'+'\n'+' |  Ó'+'\n'+' |'+'\n'+' |'+'\n'+'_|__')
-    elif len(wrong_guesses)==2:
+    elif len(wrong_guesses) == 2:
         print(' _____'+'\n'+' |  Ó'+'\n'+' |  |'+'\n'+' |'+'\n'+'_|__')
-    elif len(wrong_guesses)==3:
+    elif len(wrong_guesses) == 3:
         print(' _____'+'\n'+' |  Ó'+'\n'+' | /|'+'\n'+' |'+'\n'+'_|__')
-    elif len(wrong_guesses)==4:
+    elif len(wrong_guesses) == 4:
         print(' _____'+'\n'+' |  Ó'+'\n'+' | /|\ '+'\n'+' |'+'\n'+'_|__')
-    elif len(wrong_guesses)==5:
+    elif len(wrong_guesses) == 5:
         print(' _____'+'\n'+' |  Ó'+'\n'+' | /|\ '+'\n'+' | /'+'\n'+'_|__')
     else:
         print(' _____'+'\n'+' |  Ó'+'\n'+' | /|\ '+'\n'+' | / \ '+'\n'+'_|__')
+assert display_platform('s') == print(' _____'+'\n'+' |  Ó'+'\n'+' |'+'\n'+' |'+'\n'+'_|__')
+assert display_platform('uhe') == print(' _____'+'\n'+' |  Ó'+'\n'+' | /|'+'\n'+' |'+'\n'+'_|__')
+assert display_platform('ijufxb') == print(' _____'+'\n'+' |  Ó'+'\n'+' | /|\ '+'\n'+' | / \ '+'\n'+'_|__')
 
 
 def display_letters(word, guesses):
