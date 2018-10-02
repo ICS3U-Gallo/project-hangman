@@ -1,4 +1,7 @@
 import random
-randoms = ['apple', 'banana', 'orange', 'pear']
-secret_word = random.choice(randoms)
-print(secret_word)
+secret_word = ""
+def get_secret_word(secret_word):
+  word_bank = ['apple', 'banana', 'orange', 'pear', 'mango', 'grapes']
+  secret_word = random.choice(word_bank)
+  return secret_word
+print(get_secret_word(secret_word))
