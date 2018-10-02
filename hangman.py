@@ -22,9 +22,11 @@ def main():
 
 
 #-----------------------------------------
-    #HANDLE SINGLE LETTER GUESS
-    # if guess is in the word, then add it to the correct guess 
-    # otherwise, add it to the incorrect guesses
+    for char in secert_word :
+     if char in secert_word :
+        print (char)
+     else, 
+        print ("lose")
 
     if word_solved(secret_word, correct_guesses):
         show_win_screen()
