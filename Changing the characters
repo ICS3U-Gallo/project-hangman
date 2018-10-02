@@ -1,1 +1,14 @@
+import random
+word_bank = [
+"Dog", "Matcha", "Brain", "Brother", "Player", "Cerebrum",
+"Trachea", "Fiblia", "Construct", "Construction", "Cell",
+"Mitochondria", "Power", "Calcium"
+]
+random.choice(word_bank)
+
+get_secret_word = random.choice(word_bank)
+word = get_secret_word
+display_letters = word.replace("t", " _ ", 10)
+print(display_letters)
+
 
