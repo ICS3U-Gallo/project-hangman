@@ -40,7 +40,6 @@ def word_is_solved(word, guesses):
     """
     pass
 
-
 def player_is_dead(wrong_guesses):
     """Determines if the player is dead (too many guesses).
 
@@ -50,7 +49,12 @@ def player_is_dead(wrong_guesses):
     Returns
         bool: True if dead, False otherwise
     """
-    pass
+    player_is_dead = False
+
+    if len(wrong_guesses) >= 6:
+        player_is_dead = True
+
+    return player_is_dead
 
 
 def display_platform(wrong_guesses):
