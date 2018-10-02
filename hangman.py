@@ -117,29 +117,7 @@ _|__
  | / \ 
 _|__
 ''')
-assert display_platform('s') == print('''
- _____
- |  Ó
- |
- |
-_|__
-''')
-assert display_platform('uhe') == print('''
- _____
- |  Ó
- | /|
- |
-_|__
-''')
-assert display_platform('ijufxb') == print('''
- _____
- |  Ó
- | /|\ 
- | / \ 
-_|__
-''')
-
-
+        
 
 def display_letters(word, guesses):
     """Displays (prints) the letter-board,
