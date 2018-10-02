@@ -11,17 +11,17 @@ def main():
         display_letters(secret_word, correct_guesses)
         guess = get_guess()
 
-  #-----------------------------------     
+       
    
-  if guess_length >1:
-      if guess == secret_word:
-          print("Win")
-      else:
-          print("Lose")
+    if guess_length >1:
+        if guess == secret_word:
+            print("Win")
+        else:
+            print("Lose")
    
 
 
-#-----------------------------------------
+
     for char in secert_word :
      if char in secert_word :
         print (char)
