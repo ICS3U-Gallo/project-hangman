@@ -66,8 +66,65 @@ def display_platform(wrong_guesses):
     Args:
         wrong_guesses (str): A string containing all wrong guesses.
     """
-    pass
 
+    def display_platform(wrong_guesses):
+    if len(wrong_guesses) == 0:
+        print('''
+ _____
+ |
+ |
+ |
+_|__
+''')
+    elif len(wrong_guesses) == 1:
+        print('''
+ _____
+ |  Ó
+ |
+ |
+_|__
+''')
+    elif len(wrong_guesses) == 2:
+        print('''
+ _____
+ |  Ó
+ |  |
+ |
+_|__
+''')
+    elif len(wrong_guesses) == 3:
+        print('''
+ _____
+ |  Ó
+ | /|
+ |
+_|__
+''')
+    elif len(wrong_guesses) == 4:
+        print('''
+ _____
+ |  Ó
+ | /|\ 
+ |
+_|__
+''')
+    elif len(wrong_guesses) == 5:
+        print('''
+ _____
+ |  Ó
+ | /|\ 
+ | /
+_|__
+''')
+    else:
+        print('''
+ _____
+ |  Ó
+ | /|\ 
+ | / \ 
+_|__
+''')
+        
 
 def display_letters(word, guesses):
     """Displays (prints) the letter-board,
