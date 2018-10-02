@@ -1,19 +1,17 @@
-# Hangman (Pseudocode)
+def show_win_screen():
+  print("_____.___.                      .__         ._.         ___    ")
+  print("\__  |   | ____  __ __  __  _  _|__| ____   | |     /\  \  \   ")
+  print(" /   |   |/  _ \|  |  \ \ \/ \/ /  |/    \  | |     \/   \  \  ")
+  print(" \____   (  <_> )  |  /  \     /|  |   |  \  \|     /\    )  ) ")
+  print(" / ______|\____/|____/    \/\_/ |__|___|  /  __     \/   /  /  ")
+  print(" \/                                     \/   \/         /__/   ")
 
-```
-Topic = get the topic
-display the topic
-word = get the word
-display number of letters
-while # of wrong answers less than six
-  ask for letter
-  if guess is right replace blank space with letter
-  if guess is wrong add 1 to wrong answers
-  if all letters are guessed, 
-    break loop
-if wrong answers is less than 6 
-  print, congratulations you won
-else
-  print, game over
-  
-```
+
+def show_lose_screen():
+  print("_____.___.              .__                        ._.            ___ ")
+  print("\__  |   | ____  __ __  |  |   ____  ______ ____   | |     /\    /  / ")
+  print(" /   |   |/  _ \|  |  \ |  |  /  _ \/  ___// __ \  | |     \/   /  /  ")
+  print(" \____   (  <_> )  |  / |  |_(  <_> )___ \\  ___/   \|      /\  (  (   ")
+  print(" / ______|\____/|____/  |____/\____/____  >\___  >  __     \/   \  \  ")
+  print(" \/                                     \/     \/   \/           \__\ ")
+
