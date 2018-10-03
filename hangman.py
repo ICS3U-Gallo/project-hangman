@@ -40,6 +40,7 @@ def word_is_solved(word, guesses):
     """
     pass
 
+
 def player_is_dead(wrong_guesses):
     """Determines if the player is dead (too many guesses).
 
@@ -59,11 +60,110 @@ def player_is_dead(wrong_guesses):
 
 def display_platform(wrong_guesses):
     """Displays (prints) hanging platform based on how many incorrect guesses.
-
-    Args:
-        wrong_guesses (str): A string containing all wrong guesses.
+    
+    Args:	
+    	wrong_guesses (str): A string containing all wrong guesses.
     """
-    pass
+    zero_incorrect = """
+    _________
+    |        |
+           |
+           |
+           |
+           |
+           |
+           |
+    _________|_______
+    """
+
+
+
+    one_incorrect = """
+    _________
+    |        |
+    O        |
+           |
+           |
+           |
+           |
+           |
+    _________|_______
+    """
+
+    two_incorrect = """
+    _________
+    |        |
+    O        |
+    |        |
+    |        |
+           |
+           |
+           |
+    _________|_______
+    """
+
+    three_incorrect = """
+    _________
+    |        |
+    O        |
+    --|        |
+    |        |
+           |
+           |
+           |
+    _________|_______
+    """
+
+    four_incorrect = """
+    _________
+    |        |
+    O        |
+    --|--      |
+    |        |
+           |
+           |
+           |
+    _________|_______
+    """
+
+    five_incorrect = """
+    _________
+    |        |
+    O        |
+    --|--      |
+    |        |
+    /         |
+           |
+           |
+    _________|_______
+    """
+
+    six_incorrect = """
+    _________
+    |        |
+    O        |
+    --|--      |
+    |        |
+    / \       |
+           |
+           |
+    _________|_______
+    """
+
+    if num_wrong_attempts == 0:
+        print(zero_incorrect)
+    if num_wrong_attempts == 1:
+        print(one_incorrect) 
+    if num_wrong_attempts == 2: 
+        print(two_incorrect) 
+    if num_wrong_attempts == 3:  
+        print(three_incorrect)
+    if num_wrong_attempts == 4: 
+        print(four_incorrect)
+    if num_wrong_attempts == 5:  
+        print(five_incorrect) 
+    if num_wrong_attempts == 6:  
+        print(six_incorrect)
 
 
 def display_letters(word, guesses):
@@ -91,16 +191,33 @@ def get_guess():
     else:
         return letter
 
-
-
+    
 def show_win_screen():
     """Will display ASCII art for a win screen"""
-    pass
+    print ("""
+                                                   /$$           /$$
+                                                  |__/          | $$
+ /$$   /$$  /$$$$$$  /$$   /$$       /$$  /$$  /$$ /$$ /$$$$$$$ | $$
+| $$  | $$ /$$__  $$| $$  | $$      | $$ | $$ | $$| $$| $$__  $$| $$
+| $$  | $$| $$  \ $$| $$  | $$      | $$ | $$ | $$| $$| $$  \ $$|__/
+| $$  | $$| $$  | $$| $$  | $$      | $$ | $$ | $$| $$| $$  | $$    
+|  $$$$$$$|  $$$$$$/|  $$$$$$/      |  $$$$$/$$$$/| $$| $$  | $$ /$$
+ \____  $$ \______/  \______/        \_____/\___/ |__/|__/  |__/|__/
+ /$$  | $$                                                          
+|  $$$$$$/                                                          
+ \______/                                                           
+""")
 
 
 def show_lose_screen():
     """Will display ASCII art for a lose screen"""
-    pass
+    print("""
+   
+ _  _  __   _  _    __     __   ____  ____    _  _  
+( \/ )/  \ / )( \  (  )   /  \ / ___)(  __)  (_)/ ) 
+ )  /(  O )) \/ (  / (_/\(  O )\___ \ ) _)    _( (  
+(__/  \__/ \____/  \____/ \__/ (____/(____)  (_)\_) 
+""")
 
 
 if __name__ == "__main__":
