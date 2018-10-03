@@ -81,7 +81,16 @@ def get_guess():
     """Will take the user's guess. Ensures the input is valid.
 
     """
-    pass
+    letter = input("Please input a letter to check").lower()
+    if len(letter) != 1:
+        print("Please input a single letter")
+        get_guess()
+    elif letter not in "abcdefghijklmnopqrstuvxyz":
+        print ("Only input letters")
+        get_guess()
+    else:
+        return letter
+
 
 
 def show_win_screen():
