@@ -140,10 +140,10 @@ def display_letters(word, guesses):
 
 
 def get_guess():
-      validity = False
+  validity = False
   while validity == False:
     letter = input('Enter a letter:')
-    if letter in "qwertyuiopasdfghjklzxcvbnm" and len(letter) == 1:
+    if letter in "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM" and len(letter) == 1:
         validity = True
     else:
       print('Character is invalid. ',end='')
