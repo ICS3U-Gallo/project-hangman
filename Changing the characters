@@ -1,24 +1,35 @@
-get_secret_word = "Apple"
-guesses = input()
-word = ""
-
-if guesses == "a":
-  word += "a"
-  word += " _ "
-  word += " _ "
-  word += " _ "
-  word += " _ "
-  word += " _ "
-  print(word)
-elif guesses == "p":
-  word += "_ p p _ _"
-  print(word)
-elif guesses == "l":
-  word += "_ _ _ l _"
-  print("word")
-elif guesses == "e":
-  word += "_ _ _ _ e"
-  print("word")
-else: 
-  print("try again")
-  print("_ _ _ _ _")
+string = "apple"
+guess = input()
+charct = list(string)
+undscr= "_ "*len(string)
+answer = ""
+for i in range(10):
+  if guess in charct: # guess checker
+    print("correct")
+    if guess == "a":
+      answer += "a"
+      answer += " _ "
+      answer += " _ "
+      answer += " _ "
+      answer += " _ "
+      answer += " _ "
+      print(answer)
+    elif guess == "p":
+      answer += "_ p p _ _"
+      print(answer)
+    elif guess == "l":
+      answer += "_ _ _ l _"
+      print("answer")
+    elif guess == "e":
+      answer += "_ _ _ _ e"
+      print("answer")
+    if charct == answer:
+      print("string")
+      print("congrats")
+    break
+  elif guess != charct:
+    print(undscr, end = ' ')
+    print("wrong")
+    get_secret_word = "Apple"
+guess = input()
+answer = ""
