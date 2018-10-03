@@ -19,11 +19,12 @@ def main():
         show_lose_screen()
 
 
-def get_secret_word():
-    """Will return a single word from a list of words.
+import random
+def getsecretword():
+    secretwords = ["hangman", "apple", "computer", "god"]
+    word = random.choice(secretwords)
+    (word)
 
-    Returns:
-        Single word from a list
     """
     pass
 
