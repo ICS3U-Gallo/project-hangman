@@ -66,8 +66,65 @@ def display_platform(wrong_guesses):
     Args:
         wrong_guesses (str): A string containing all wrong guesses.
     """
-    pass
 
+    def display_platform(wrong_guesses):
+    if len(wrong_guesses) == 0:
+        print('''
+ _____
+ |
+ |
+ |
+_|__
+''')
+    elif len(wrong_guesses) == 1:
+        print('''
+ _____
+ |  Ó
+ |
+ |
+_|__
+''')
+    elif len(wrong_guesses) == 2:
+        print('''
+ _____
+ |  Ó
+ |  |
+ |
+_|__
+''')
+    elif len(wrong_guesses) == 3:
+        print('''
+ _____
+ |  Ó
+ | /|
+ |
+_|__
+''')
+    elif len(wrong_guesses) == 4:
+        print('''
+ _____
+ |  Ó
+ | /|\ 
+ |
+_|__
+''')
+    elif len(wrong_guesses) == 5:
+        print('''
+ _____
+ |  Ó
+ | /|\ 
+ | /
+_|__
+''')
+    else:
+        print('''
+ _____
+ |  Ó
+ | /|\ 
+ | / \ 
+_|__
+''')
+        
 
 def display_letters(word, guesses):
     """Displays (prints) the letter-board,
@@ -87,12 +144,22 @@ def get_guess():
 
 def show_win_screen():
     """Will display ASCII art for a win screen"""
-    pass
+    print("_____.___.                      .__         ._.         ___    ")
+    print("\__  |   | ____  __ __  __  _  _|__| ____   | |     /\  \  \   ")
+    print(" /   |   |/  _ \|  |  \ \ \/ \/ /  |/    \  | |     \/   \  \  ")
+    print(" \____   (  <_> )  |  /  \     /|  |   |  \  \|     /\    )  ) ")
+    print(" / ______|\____/|____/    \/\_/ |__|___|  /  __     \/   /  /  ")
+    print(" \/                                     \/   \/         /__/   ")
 
 
 def show_lose_screen():
     """Will display ASCII art for a lose screen"""
-    pass
+    print("_____.___.              .__                        ._.            ___ ")
+    print("\__  |   | ____  __ __  |  |   ____  ______ ____   | |     /\    /  / ")
+    print(" /   |   |/  _ \|  |  \ |  |  /  _ \/  ___// __ \  | |     \/   /  /  ")
+    print(" \____   (  <_> )  |  / |  |_(  <_> )___ \\  ___/   \|      /\  (  (   ")
+    print(" / ______|\____/|____/  |____/\____/____  >\___  >  __     \/   \  \  ")
+    print(" \/                                     \/     \/   \/           \__\ ")
 
 
 if __name__ == "__main__":
