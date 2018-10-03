@@ -19,5 +19,6 @@ def test_display_letters():
     
 # Test display_platform(wrong_guesses)
 # display_platform("a") -> display with head
-
-
+# display_platform("serw") -> display with head, body, 2 arms
+# display_platform("qwertyiop") -> display with head, body, 2 arms, 2 legs (final diplay)
+# display_platform("")-> display blank platform
