@@ -10,16 +10,19 @@ def main():
         display_platform(wrong_guesses)
         display_letters(secret_word, correct_guesses)
         guess = get_guess()
+        
+        if len(guess) > 1:
+            if guess == secret_word:
+                correct_guessses = guess
+                break
+            else:
+                wrong_guesses = wrong_guesses + "*"
+        else:
+            if guess in secret_word:
+                correct_guesses = correct_guesses + guess
+            else:
+                wrong_guesses = wrong_guesses + guess 
 
-        # if guess is a word:
-            # if guess is correct:
-                # win
-            # else:
-                # lose
-
-        # HANDLE SINGLE LETTER GUESS
-        # if guess is in the word, the add it to the correct guesses
-        # otherwise, add it to the incorrect guesses
 
     if word_is_solved(secret_word, correct_guesses):
         show_win_screen()
