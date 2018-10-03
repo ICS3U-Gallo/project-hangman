@@ -63,7 +63,7 @@ def display_platform(wrong_guesses):
         wrong_guesses (str): A string containing all wrong guesses.
     """
     if len(wrong_guesses) == 0: 
-       display_platform0 = '''        
+        display_platform0 = '''        
                           _______________
                           |             |            
                                         |
@@ -76,7 +76,7 @@ def display_platform(wrong_guesses):
                                         |
                                         |
                              |====================|  ''' 
-       print(display_platform0)
+        print(display_platform0)
 
     if len(wrong_guesses) == 1:
         display_platform1 = '''   
@@ -146,7 +146,7 @@ def display_platform(wrong_guesses):
         print(display_platform4)
 
     if len(wrong_guesses) == 5:
-          display_platform5 = '''   
+        display_platform5 = '''   
                         _______________
                         |             |
                        ____           |
@@ -160,7 +160,7 @@ def display_platform(wrong_guesses):
                       ==|             |
                                       |
                           |====================|  '''
-          print(display_platform5)
+        print(display_platform5)
 
     if len(wrong_guesses) == 6:
         display_platform6 = '''   
