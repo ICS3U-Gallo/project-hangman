@@ -184,7 +184,22 @@ def display_letters(word, guesses):
         word (str): The secret word
         guesses (str): A string of correct guesses
     """
-    pass
+    letters = list(word)
+    guesses = list(set(guesses))
+    word_list = list(word)
+
+    for k in range(0, len(word)):
+        if(letters[k] != " "):
+            letters[k] = "_"
+
+    for i in range(0, len(guesses)):
+        for k in range(0, word.count(guesses[i])):
+            if(guesses[i] in word):
+                ind = word_list.index(guesses[i])
+                letters[ind] = guesses[i]
+                word_list[ind] = "_"
+
+    return " ".join(letters)
 
 
 def get_guess():
