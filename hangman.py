@@ -55,6 +55,7 @@ def player_is_dead(wrong_guesses):
 
 def display_platform(wrong_guesses):
     """Displays (prints) hanging platform based on how many incorrect guesses.
+    
     Args:	
     	wrong_guesses (str): A string containing all wrong guesses.
     """
