@@ -10,25 +10,20 @@ def main():
         display_platform(wrong_guesses)
         display_letters(secret_word, correct_guesses)
         guess = get_guess()
-
-       
-   
-    if guess_length >1:
-        if guess == secret_word:
-            print("Win")
+        
+        if len(guess) > 1:
+            if guess == secret_word:
+                correct_guessses = guess
+                break
+            else:
+                wrong_guesses = wrong_guesses + "*"
         else:
-            print("Lose")
-   
-
-
-
-    for char in secert_word :
-     if char in secert_word :
-        print (char)
-     else, 
-        print ("lose")
-
-    if word_solved(secret_word, correct_guesses):
+            if guess in secret_word:
+                correct_guesses = correct_guesses + guess
+            else:
+                wrong_guesses = wrong_guesses + guess 
+        
+    if word_is_solved(secret_word, correct_guesses):
         show_win_screen()
     else:
         show_lose_screen()
