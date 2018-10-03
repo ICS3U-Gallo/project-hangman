@@ -1,4 +1,6 @@
-def get_secret_word():
+from hangman import *
+
+def test_get_secret_word():
     words = {get_secret_word() for _ in range(100)}
     assert len(words) >= 5, "Should contain a list of at least 5 words."
     
