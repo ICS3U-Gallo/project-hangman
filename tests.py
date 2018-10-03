@@ -17,3 +17,28 @@ def test_display_letters():
     
 # Test display_platform(wrong_guesses)
 # display_platform("a") -> display with head
+
+def test_get_guess():
+    
+    # Test case 1: 
+    # input: "AB", 
+    # expected result: 'Character is invalid. Enter a letter:'
+
+    # Test case 2: 
+    # input: "A", 
+    # expected result: The letter is returned (testable by assigning a variable and printing.)
+
+    # Test case 3: 
+    # input: An apostrophe,
+    # expected result: 'Character is invalid. Enter a letter:'
+
+    # Test case 4: 
+    # input: "1",
+    # expected result: 'Character is invalid. Enter a letter:'
+
+    # Test case 5: 
+    # input: "d",
+    # expected result: the letter is returned (testable by assigning a variable and printing.)
+    pass
+
+
