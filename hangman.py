@@ -59,7 +59,7 @@ def display_platform(wrong_guesses):
     Args:	
     	wrong_guesses (str): A string containing all wrong guesses.
     """
- zero_incorrect = ("""
+ zero_incorrect = """
   _________
   |        |
            |
@@ -69,11 +69,11 @@ def display_platform(wrong_guesses):
            |
            |
   _________|_______
-""")
+"""
 
 
 
-one_incorrect = ("""
+one_incorrect = """
   _________
   |        |
   O        |
@@ -83,10 +83,10 @@ one_incorrect = ("""
            |
            |
   _________|_______
-""")
+"""
 
-two_incorrect = ("""
-  _________
+two_incorrect = """
+_________
   |        |
   O        |
   |        |
@@ -94,10 +94,10 @@ two_incorrect = ("""
            |
            |
            |
-  _________|_______")
-	""")
+  _________|_______
+	"""
 
-three_incorrect = ("""
+three_incorrect = """
   _________
   |        |
   O        |
@@ -107,9 +107,9 @@ three_incorrect = ("""
            |
            |
   _________|_______
-	""")
+	"""
 
-four_incorrect = ("""
+four_incorrect = """
   _________
   |        |
   O        |
@@ -119,9 +119,9 @@ four_incorrect = ("""
            |
            |
   _________|_______
-	""")
+	"""
 
-five_incorrect = ("""
+five_incorrect = """
   _________
   |        |
   O        |
@@ -131,9 +131,9 @@ five_incorrect = ("""
            |
            |
   _________|_______
-""")
+"""
 
-six_incorrect = ("""
+six_incorrect = """
   _________
   |        |
   O        |
@@ -143,7 +143,7 @@ six_incorrect = ("""
            |
            |
   _________|_______
-""")
+"""
 
 
 if num_wrong_attempts == 0:
