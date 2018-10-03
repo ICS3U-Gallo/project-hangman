@@ -1,14 +1,24 @@
-import random
-word_bank = [
-"Dog", "Matcha", "Brain", "Brother", "Player", "Cerebrum",
-"Trachea", "Fiblia", "Construct", "Construction", "Cell",
-"Mitochondria", "Power", "Calcium"
-]
-random.choice(word_bank)
+get_secret_word = "Apple"
+guesses = input()
+word = ""
 
-get_secret_word = random.choice(word_bank)
-word = get_secret_word
-display_letters = word.replace("t", " _ ", 10)
-print(display_letters)
-
-
+if guesses == "a":
+  word += "a"
+  word += " _ "
+  word += " _ "
+  word += " _ "
+  word += " _ "
+  word += " _ "
+  print(word)
+elif guesses == "p":
+  word += "_ p p _ _"
+  print(word)
+elif guesses == "l":
+  word += "_ _ _ l _"
+  print("word")
+elif guesses == "e":
+  word += "_ _ _ _ e"
+  print("word")
+else: 
+  print("try again")
+  print("_ _ _ _ _")
