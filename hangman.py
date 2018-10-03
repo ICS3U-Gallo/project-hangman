@@ -54,6 +54,10 @@ def player_is_dead(wrong_guesses):
 
 
 def display_platform(wrong_guesses):
+    """Displays (prints) hanging platform based on how many incorrect guesses.
+    Args:	
+    	wrong_guesses (str): A string containing all wrong guesses.
+    """
  zero_incorrect = ("""
   _________
   |        |
@@ -183,6 +187,7 @@ def get_guess():
 
 
 def show_win_screen():
+    """Will display ASCII art for a win screen"""
   print ("""
                                                    /$$           /$$
                                                   |__/          | $$
@@ -201,6 +206,7 @@ def show_win_screen():
 
 
 def show_lose_screen():
+    """Will display ASCII art for a lose screen"""
   print("""
      
  _  _  __   _  _    __     __   ____  ____    _  _  
