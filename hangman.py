@@ -26,14 +26,12 @@ def main():
     else:
         show_lose_screen()
 
-
-def get_secret_word():
-    """Will return a single word from a list of words.
-    Returns:
-        Single word from a list
-    """
-    pass
-
+secret_word = ""
+def get_secret_word(secret_word):
+    import random
+    word_bank = ['apple', 'banana', 'orange', 'pear', 'mango', 'grapes']
+    secret_word = random.choice(word_bank)
+    return secret_word
 
 def word_is_solved(word, guesses):
     """Will check to see if a word has been completely solved.
