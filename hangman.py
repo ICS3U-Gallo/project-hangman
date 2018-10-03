@@ -10,18 +10,21 @@ def main():
         display_platform(wrong_guesses)
         display_letters(secret_word, correct_guesses)
         guess = get_guess()
-   
-        # if guess is a word:
-            # if guess is correct:
-                # win
-            # else:
-                # lose
+        
+        if len(guess) > 1:
+            if guess == secret_word:
+                correct_guessses = guess
+                break
+            else:
+                wrong_guesses = wrong_guesses + "*"
+        else:
+            if guess in secret_word:
+                correct_guesses = correct_guesses + guess
+            else:
+                wrong_guesses = wrong_guesses + guess 
 
-        # HANDLE SINGLE LETTER GUESS
-        # if guess is in the word, the add it to the correct guesses
-        # otherwise, add it to the incorrect guesses
 
-    if word_solved(secret_word, correct_guesses):
+    if word_is_solved(secret_word, correct_guesses):
         show_win_screen()
     else:
         show_lose_screen()
@@ -178,6 +181,7 @@ def display_platform(wrong_guesses):
                                       |
                           |====================|  '''
         print(display_platform6)
+
 
 def display_letters(word, guesses):
     """Displays (prints) the letter-board,
