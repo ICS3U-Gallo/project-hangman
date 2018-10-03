@@ -21,7 +21,7 @@ def main():
         # if guess is in the word, the add it to the correct guesses
         # otherwise, add it to the incorrect guesses
 
-    if word_solved(secret_word, correct_guesses):
+    if word_is_solved(secret_word, correct_guesses):
         show_win_screen()
     else:
         show_lose_screen()
