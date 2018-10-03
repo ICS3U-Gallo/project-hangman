@@ -34,7 +34,6 @@ def get_secret_word():
     return random.choice(word_bank)
 
 
-
 def word_is_solved(word, guesses):
     """Will check to see if a word has been completely solved.
     
@@ -58,11 +57,10 @@ def player_is_dead(wrong_guesses):
         bool: True if dead, False otherwise
     """
     if len(wrong_guesses) >= 6:
-      return True
-    else: 
-      return False
+        return True
+    else:
+        return False
  
-
 
 def display_platform(wrong_guesses):
     """Displays (prints) hanging platform based on how many incorrect guesses.
@@ -70,8 +68,6 @@ def display_platform(wrong_guesses):
     Args:
         wrong_guesses (str): A string containing all wrong guesses.
     """
-
-    def display_platform(wrong_guesses):
     if len(wrong_guesses) == 0:
         print('''
  _____
@@ -143,7 +139,16 @@ def display_letters(word, guesses):
 
 def get_guess():
     """Will take the user's guess. Ensures the input is valid."""
-    pass
+    validity = False
+    while validity == False:
+        letter = input('Enter a letter:')
+        if letter in "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM" and len(letter) == 1:
+            validity = True
+        else:
+            print('Character is invalid. ', end='')
+    
+        if validity == True:
+            return letter
 
 
 def show_win_screen():

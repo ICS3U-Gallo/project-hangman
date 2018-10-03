@@ -1,5 +1,6 @@
 from hangman import *
 
+
 def test_get_secret_word():
     words = {get_secret_word() for _ in range(100)}
     assert len(words) >= 5, "Should contain a list of at least 5 words."
@@ -16,9 +17,34 @@ def test_word_is_solved():
 def test_display_letters():
     assert display_letters("hello", "h") == "h _ _ _ _", "Should reveal only first letter"
 
-    
-# Test display_platform(wrong_guesses)
-# display_platform("a") -> display with head
-# display_platform("serw") -> display with head, body, 2 arms
-# display_platform("qwertyiop") -> display with head, body, 2 arms, 2 legs (final diplay)
-# display_platform("")-> display blank platform
+
+def test_display_platform():
+    # Test display_platform(wrong_guesses)
+    # display_platform("a") -> display with head
+    # display_platform("serw") -> display with head, body, 2 arms
+    # display_platform("qwertyiop") -> display with head, body, 2 arms, 2 legs (final diplay)
+    # display_platform("")-> display blank platform
+    pass
+
+
+def test_get_guess():
+    # Test case 1: 
+    # input: "AB", 
+    # expected result: 'Character is invalid. Enter a letter:'
+
+    # Test case 2: 
+    # input: "A", 
+    # expected result: The letter is returned (testable by assigning a variable and printing.)
+
+    # Test case 3: 
+    # input: An apostrophe,
+    # expected result: 'Character is invalid. Enter a letter:'
+
+    # Test case 4: 
+    # input: "1",
+    # expected result: 'Character is invalid. Enter a letter:'
+
+    # Test case 5: 
+    # input: "d",
+    # expected result: the letter is returned (testable by assigning a variable and printing.)
+    pass
