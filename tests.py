@@ -6,7 +6,7 @@ def test_get_secret_word():
     
     # do the following:
     assert what secret word returns is a string, "Should return a string"
-
+ - 
 
 def test_word_is_solved():
     assert word_is_solved("hello", "eh") == False, "Should not be solved guesses: 'eh' for word: 'hello'."
@@ -19,5 +19,8 @@ def test_display_letters():
     
 # Test display_platform(wrong_guesses)
 # display_platform("a") -> display with head
+# display_platform("serw") -> display with head, body, 2 arms
+# display_platform("qwertyiop") -> display with head, body, 2 arms, 2 legs (final diplay)
+# display_platform("")-> display blank platform
 
 
