@@ -35,7 +35,10 @@ def get_secret_word():
     Returns:
         Single word from a list
     """
-    pass
+    import random
+    word_bank = ['apple', 'banana', 'orange', 'pear', 'mango', 'grapes']
+    secret_word = random.choice(word_bank)
+    return secret_word
 
 
 def word_is_solved(word, guesses):
