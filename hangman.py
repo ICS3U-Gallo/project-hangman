@@ -22,7 +22,8 @@ def main():
                 correct_guesses = correct_guesses + guess
             else:
                 wrong_guesses = wrong_guesses + guess 
-        
+
+
     if word_is_solved(secret_word, correct_guesses):
         show_win_screen()
     else:
