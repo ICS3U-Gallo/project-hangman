@@ -80,7 +80,6 @@ def display_platform(wrong_guesses):
                                         |
                              |====================|  ''' 
         print(display_platform0)
-
     if len(wrong_guesses) == 1:
         display_platform1 = '''   
                         _______________
@@ -97,7 +96,6 @@ def display_platform(wrong_guesses):
                                       |
                           |====================|  '''
         print(display_platform1)
-
     if len(wrong_guesses) == 2:
         display_platform2 = '''   
                         _______________
@@ -113,7 +111,6 @@ def display_platform(wrong_guesses):
                                       |
                           |====================|  '''
         print(display_platform2)
-
     if len(wrong_guesses) == 3:
         display_platform3 = '''   
                         _______________
@@ -130,7 +127,6 @@ def display_platform(wrong_guesses):
                                       |
                           |====================|  '''
         print(display_platform3)
-
     if len(wrong_guesses) == 4:
         display_platform4 = '''   
                         _______________
@@ -147,7 +143,6 @@ def display_platform(wrong_guesses):
                                       |
                           |====================|   '''
         print(display_platform4)
-
     if len(wrong_guesses) == 5:
         display_platform5 = '''   
                         _______________
@@ -164,7 +159,6 @@ def display_platform(wrong_guesses):
                                       |
                           |====================|  '''
         print(display_platform5)
-
     if len(wrong_guesses) == 6:
         display_platform6 = '''   
                         _______________
