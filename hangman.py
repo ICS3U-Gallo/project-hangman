@@ -68,8 +68,6 @@ def display_platform(wrong_guesses):
     Args:
         wrong_guesses (str): A string containing all wrong guesses.
     """
-
-    def display_platform(wrong_guesses):
     if len(wrong_guesses) == 0:
         print('''
  _____
