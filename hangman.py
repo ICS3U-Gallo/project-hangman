@@ -1,4 +1,5 @@
 def main():
+    show_title_screen()
     secret_word = get_secret_word()
     correct_guesses = ""
     wrong_guesses = ""
@@ -146,7 +147,19 @@ def get_guess():
     
         if validity == True:
             return letter
+def show_title_screen():
+    return('''
+Let's play...
 
+██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███╗   ███╗ █████╗ ███╗   ██╗
+██║  ██║██╔══██╗████╗  ██║██╔════╝ ████╗ ████║██╔══██╗████╗  ██║
+███████║███████║██╔██╗ ██║██║  ███╗██╔████╔██║███████║██╔██╗ ██║
+██╔══██║██╔══██║██║╚██╗██║██║   ██║██║╚██╔╝██║██╔══██║██║╚██╗██║
+██║  ██║██║  ██║██║ ╚████║╚██████╔╝██║ ╚═╝ ██║██║  ██║██║ ╚████║
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+                                                                
+
+''')
 
 def show_win_screen():
     """Will display ASCII art for a win screen"""
