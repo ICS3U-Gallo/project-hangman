@@ -1,4 +1,5 @@
-# hangman.py 
+# hangman.py
+
 
 def main():
     secret_word = get_secret_word()
@@ -11,17 +12,19 @@ def main():
         display_letters(secret_word, correct_guesses)
         guess = get_guess()
 
-        # if guess is a word:
-            # if guess is correct:
-                # win
-            # else:
-                # lose
+        if len(guess) > 1:
+            if guess == secret_word:
+                correct_guessses = guess
+                break
+            else:
+                wrong_guesses = wrong_guesses + "*"
+        else:
+            if guess in secret_word:
+                correct_guesses = correct_guesses + guess
+            else:
+                wrong_guesses = wrong_guesses + guess
 
-        # HANDLE SINGLE LETTER GUESS
-        # if guess is in the word, the add it to the correct guesses
-        # otherwise, add it to the incorrect guesses
-
-    if word_solved(secret_word, correct_guesses):
+    if word_is_solved(secret_word, correct_guesses):
         show_win_screen()
     else:
         show_lose_screen()
@@ -32,7 +35,10 @@ def get_secret_word():
     Returns:
         Single word from a list
     """
-    pass
+    import random
+    word_bank = ['apple', 'banana', 'orange', 'pear', 'mango', 'grapes']
+    secret_word = random.choice(word_bank)
+    return secret_word
 
 
 def word_is_solved(word, guesses):
@@ -43,7 +49,12 @@ def word_is_solved(word, guesses):
     Returns:
         bool: True if word is solved, False if word is not.
     """
-    pass
+
+    for letter in word:
+        if letter not in guesses:
+            return False
+
+    return True
 
 
 def player_is_dead(wrong_guesses):
@@ -57,11 +68,121 @@ def player_is_dead(wrong_guesses):
 
 
 def display_platform(wrong_guesses):
-    """Displays (prints) hanging platform based on how many incorrect guesses.
-    Args:
+    """
+    Displays (prints) hanging platform based on how many incorrect guesses.
+    Args: 
         wrong_guesses (str): A string containing all wrong guesses.
     """
-    pass
+    if len(wrong_guesses) == 0: 
+        display_platform0 = '''        
+                          _______________
+                          |             |            
+                                        |
+                                        |
+                                        |
+                                        |
+                                        |
+                                        |
+                                        | 
+                                        |
+                                        |
+                             |====================|  ''' 
+        print(display_platform0)
+    if len(wrong_guesses) == 1:
+        display_platform1 = '''   
+                        _______________
+                        |             |
+                       ____           |
+                      { * *}          |
+                       ----           |
+                                      |
+                                      |
+                                      |
+                                      |
+                                      | 
+                                      |
+                                      |
+                          |====================|  '''
+        print(display_platform1)
+    if len(wrong_guesses) == 2:
+        display_platform2 = '''   
+                        _______________
+                        |             |
+                       ____           |
+                      { * *}          |
+                       ----           |
+                        []            |
+                        []            |
+                        []            |
+                                      |
+                                      | 
+                                      |
+                          |====================|  '''
+        print(display_platform2)
+    if len(wrong_guesses) == 3:
+        display_platform3 = '''   
+                        _______________
+                        |             |
+                       ____           |
+                      { * *}          |
+                       ----           |
+                        [] \          |
+                        []  \         |
+                        []   O        |
+                                      |
+                                      | 
+                                      |
+                                      |
+                          |====================|  '''
+        print(display_platform3)
+    if len(wrong_guesses) == 4:
+        display_platform4 = '''   
+                        _______________
+                        |             |
+                       ____           |
+                      { * *}          |
+                       ----           |
+                      / [] \          |
+                     /  []  \         |
+                    O   []   O        |
+                                      |
+                                      |
+                                      |
+                                      |
+                          |====================|   '''
+        print(display_platform4)
+    if len(wrong_guesses) == 5:
+        display_platform5 = '''   
+                        _______________
+                        |             |
+                       ____           |
+                      { * *}          |
+                       ----           |
+                      / [] \          |
+                    /   []  \         |
+                    O   []   O        |
+                        |             |
+                        |             | 
+                      ==|             |
+                                      |
+                          |====================|  '''
+        print(display_platform5)
+    if len(wrong_guesses) == 6:
+        display_platform6 = '''   
+                        _______________
+                        |             |
+                       ____           |
+                      { * *}          |
+                       ----           |
+                      / [] \          |
+                     /  []  \         |
+                    O   []   O        |
+                        ||            |
+                        ||            | 
+                      ==||==          |
+                                      |
+                          |====================|  '''
+        print(display_platform6)
 
 
 def display_letters(word, guesses):
@@ -92,17 +213,41 @@ def display_letters(word, guesses):
 def get_guess():
     """Will take the user's guess. Ensures the input is valid.
     """
-    pass
+
+    while True:
+        guess = input("Enter your guess: ")
+        if all(letter.isalpha() or letter.isspace() for letter in guess):
+            return guess.lower()
+        print("Invalid guess! Please make sure your guess only contains letters or spaces. ")
 
 
 def show_win_screen():
     """Will display ASCII art for a win screen"""
-    pass
+    print(" ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄       ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄        ▄  ▄ ")
+    print("▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌     ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░▌      ▐░▌▐░▌")
+    print("▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌     ▐░▌       ▐░▌ ▀▀▀▀█░█▀▀▀▀ ▐░▌░▌     ▐░▌▐░▌")
+    print("▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌     ▐░▌       ▐░▌     ▐░▌     ▐░▌▐░▌    ▐░▌▐░▌")
+    print("▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌▐░▌       ▐░▌     ▐░▌   ▄   ▐░▌     ▐░▌     ▐░▌ ▐░▌   ▐░▌▐░▌")
+    print("▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░▌       ▐░▌     ▐░▌  ▐░▌  ▐░▌     ▐░▌     ▐░▌  ▐░▌  ▐░▌▐░▌")
+    print(" ▀▀▀▀█░█▀▀▀▀ ▐░▌       ▐░▌▐░▌       ▐░▌     ▐░▌ ▐░▌░▌ ▐░▌     ▐░▌     ▐░▌   ▐░▌ ▐░▌▐░▌")
+    print("     ▐░▌     ▐░▌       ▐░▌▐░▌       ▐░▌     ▐░▌▐░▌ ▐░▌▐░▌     ▐░▌     ▐░▌    ▐░▌▐░▌ ▀ ")
+    print("     ▐░▌     ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌     ▐░▌░▌   ▐░▐░▌ ▄▄▄▄█░█▄▄▄▄ ▐░▌     ▐░▐░▌ ▄ ")
+    print("     ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌     ▐░░▌     ▐░░▌▐░░░░░░░░░░░▌▐░▌      ▐░░▌▐░▌")
+    print("      ▀       ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀       ▀▀       ▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀        ▀▀  ▀ ")
 
 
 def show_lose_screen():
     """Will display ASCII art for a lose screen"""
-    pass
+    print("▓██   ██▓ ▒█████   █    ██     ██▓     ▒█████    ██████ ▓█████                ")
+    print(" ▒██  ██▒▒██▒  ██▒ ██  ▓██▒   ▓██▒    ▒██▒  ██▒▒██    ▒ ▓█   ▀                ")
+    print("  ▒██ ██░▒██░  ██▒▓██  ▒██░   ▒██░    ▒██░  ██▒░ ▓██▄   ▒███                  ")
+    print("  ░ ▐██▓░▒██   ██░▓▓█  ░██░   ▒██░    ▒██   ██░  ▒   ██▒▒▓█  ▄                ")
+    print("  ░ ██▒▓░░ ████▓▒░▒▒█████▓    ░██████▒░ ████▓▒░▒██████▒▒░▒████▒ ██▓  ██▓  ██▓ ")
+    print("   ██▒▒▒ ░ ▒░▒░▒░ ░▒▓▒ ▒ ▒    ░ ▒░▓  ░░ ▒░▒░▒░ ▒ ▒▓▒ ▒ ░░░ ▒░ ░ ▒▓▒  ▒▓▒  ▒▓▒ ")
+    print(" ▓██ ░▒░   ░ ▒ ▒░ ░░▒░ ░ ░    ░ ░ ▒  ░  ░ ▒ ▒░ ░ ░▒  ░ ░ ░ ░  ░ ░▒   ░▒   ░▒  ")
+    print(" ▒ ▒ ░░  ░ ░ ░ ▒   ░░░ ░ ░      ░ ░   ░ ░ ░ ▒  ░  ░  ░     ░    ░    ░    ░   ")
+    print(" ░ ░         ░ ░     ░            ░  ░    ░ ░        ░     ░  ░  ░    ░    ░  ")
+    print(" ░ ░                                                             ░    ░    ░  ")
 
 
 if __name__ == "__main__":

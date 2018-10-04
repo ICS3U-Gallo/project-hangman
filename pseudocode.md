@@ -19,7 +19,7 @@ while not solved and not dead:
   else:
     add guess to wrong_guesses
 
-if body is complete: desplay loser
+if body is complete: display loser
 if the word is fully guess: 
   display winner 
   end game
