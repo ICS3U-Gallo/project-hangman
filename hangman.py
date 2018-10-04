@@ -1,11 +1,3 @@
-def show_title_screen():
-    """Will display ASCII art for a title screen"""
-    print(" _    _              _   _    _____   __  __              _   _ ")
-    print("| |  | |     /\     | \ | |  / ____| |  \/  |     /\     | \ | |")
-    print("| |__| |    /  \    |  \| | | |  __  | \  / |    /  \    |  \| |")
-    print("|  __  |   / /\ \   | . ` | | | |_ | | |\/| |   / /\ \   | . ` |")
-    print("| |  | |  / ____ \  | |\  | | |__| | | |  | |  / ____ \  | |\  |")
-    print("|_|  |_| /_/    \_\ |_| \_|  \_____| |_|  |_| /_/    \_\ |_| \_|")
 
 def main():
     show_title_screen()
@@ -151,6 +143,14 @@ def get_guess():
     """Will take the user's guess. Ensures the input is valid."""
     pass
 
+def show_title_screen():
+    """Will display ASCII art for a title screen"""
+    print(" _    _              _   _    _____   __  __              _   _ ")
+    print("| |  | |     /\     | \ | |  / ____| |  \/  |     /\     | \ | |")
+    print("| |__| |    /  \    |  \| | | |  __  | \  / |    /  \    |  \| |")
+    print("|  __  |   / /\ \   | . ` | | | |_ | | |\/| |   / /\ \   | . ` |")
+    print("| |  | |  / ____ \  | |\  | | |__| | | |  | |  / ____ \  | |\  |")
+    print("|_|  |_| /_/    \_\ |_| \_|  \_____| |_|  |_| /_/    \_\ |_| \_|")
 
 def show_win_screen():
     """Will display ASCII art for a win screen"""
