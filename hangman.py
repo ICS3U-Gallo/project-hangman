@@ -67,12 +67,12 @@ def display_platform(wrong_guesses):
     zero_incorrect = """
     _________
     |        |
-           |
-           |
-           |
-           |
-           |
-           |
+             |
+             |
+             |
+             |
+             |
+             |
     _________|_______
     """
 
@@ -82,11 +82,11 @@ def display_platform(wrong_guesses):
     _________
     |        |
     O        |
-           |
-           |
-           |
-           |
-           |
+             |
+             |
+             |
+             |
+             |
     _________|_______
     """
 
@@ -96,9 +96,9 @@ def display_platform(wrong_guesses):
     O        |
     |        |
     |        |
-           |
-           |
-           |
+             |
+             |
+             |
     _________|_______
     """
 
@@ -106,11 +106,11 @@ def display_platform(wrong_guesses):
     _________
     |        |
     O        |
-    --|        |
+  --|        |
     |        |
-           |
-           |
-           |
+             |
+             |
+             |
     _________|_______
     """
 
@@ -118,11 +118,11 @@ def display_platform(wrong_guesses):
     _________
     |        |
     O        |
-    --|--      |
+  --|--      |
     |        |
-           |
-           |
-           |
+             |
+             |
+             |
     _________|_______
     """
 
@@ -130,11 +130,11 @@ def display_platform(wrong_guesses):
     _________
     |        |
     O        |
-    --|--      |
+  --|--      |
     |        |
-    /         |
-           |
-           |
+   /         |
+             |
+             |
     _________|_______
     """
 
@@ -142,27 +142,27 @@ def display_platform(wrong_guesses):
     _________
     |        |
     O        |
-    --|--      |
+  --|--      |
     |        |
-    / \       |
-           |
-           |
+   / \       |
+             |
+             |
     _________|_______
     """
 
     if num_wrong_attempts == 0:
         print(zero_incorrect)
-    if num_wrong_attempts == 1:
+    elif num_wrong_attempts == 1:
         print(one_incorrect) 
-    if num_wrong_attempts == 2: 
+    elif num_wrong_attempts == 2: 
         print(two_incorrect) 
-    if num_wrong_attempts == 3:  
+    elif num_wrong_attempts == 3:  
         print(three_incorrect)
-    if num_wrong_attempts == 4: 
+    elif num_wrong_attempts == 4: 
         print(four_incorrect)
-    if num_wrong_attempts == 5:  
+    elif num_wrong_attempts == 5:  
         print(five_incorrect) 
-    if num_wrong_attempts == 6:  
+    elif num_wrong_attempts == 6:  
         print(six_incorrect)
 
 
