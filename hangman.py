@@ -5,5 +5,6 @@ def get_guess():
         if guess in list("qwertyuiopasdfghjklzxcvbnm"):
                  break
                  return guess
-  
+        elif guess not in list("qwertyuiopasdfghjklzxcvbnm"):
+                 print("Please F****** input letters")
 get_guess()
