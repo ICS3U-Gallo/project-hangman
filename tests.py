@@ -9,8 +9,12 @@ def test_get_secret_word():
 
 
 def test_word_is_solved():
-    assert word_is_solved("hello", "eh") == False, "Should not be solved guesses: 'eh' for word: 'hello'."
-    assert word_is_solved("world", "dorlw") == True, "Should be solved"
+    assert word_is_solved("hello", "eh") == False,"Should not be solved guesses: 'eh' for word: 'hello'."
+    assert word_is_solved("world", "dorlw") == True,"Should be solved"
+    assert word_is_solved("paper", "ptaru") == False,"Should not be solved guesses: 'ptaru' for word: 'paper'."
+    assert word_is_solved("table", "aeotbhl") == True,"Should be solved"
+    assert word_is_solved("hello world", "eawldhotr") == True,"Should be solved"
+    assert word_is_solved("hello world", "eawdhotr") == False,"Should not be solved guesses: 'eawl dhotr' for word:'hello world'."
 
     
 def test_display_letters():
