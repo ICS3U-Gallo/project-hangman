@@ -16,7 +16,18 @@ def test_word_is_solved():
     
 def test_display_letters():
     assert display_letters("hello", "h") == "h _ _ _ _", "Should reveal only first letter"
-
+    assert display_letters("hello", "hello") == "hello", "Should reveal entire word"
+    assert display_letters("hello", "wptrk") == "_ _ _ _ _", "Should reveal nothing of the word"
+    assert display_letters("hello john", "hlljoenh") == "hello john", "Should reveal whole phrase"
+    assert display_letters("hello john", "eljh") == "_ell_ j_h_", "Should reveal _ell_ j_h_"
+    assert display_letters("wow", "w") == "w_w", "Should reveal w's"
+    assert display_letters("yesterday", "ystd") == "y_st__d_y", "Should reveal y_st__d_y"
+    assert display_letters("wow thats cool" "") == "___ _____ ____", "Should reveal nothing but underscores"
+    assert display_letters("wow thats cool", "woclthas") == "wow thats cool", "Should reveal entire phrase"
+    assert display_letters("josh is the best", "osh") == "_osh _s _h_ __s_", "Should reveal _osh _s _h_ __s_"
+    assert display_letters("wowie" "abcdfghjklmnpqrstuvxyz") == "_____", "Should only reveal underscores"
+    assert display_letters("handy", "ad") == "_a_d_", "Should reveal _a_d_ should reveal ad"
+    assert display_letters("tiredness", "tnsd") == "t___dn_ss", "Should reveal t___dn_ss should be tdnss"
 
 def test_display_platform():
     # Test display_platform(wrong_guesses)
