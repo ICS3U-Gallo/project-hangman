@@ -20,13 +20,15 @@ def main():
 
 
 import random
-def getsecretword():
-    secretwords = ["hangman", "apple", "computer", "god"]
-    word = random.choice(secretwords)
-    (word)
+def get_secret_word():
+    import random
+    secretWordList = ['hello', 'turtle', 'potato', 'water', 'turnip', 'magic', 'cow', 'champion', 'return', 'computer']
+    number = random.randint(0,len(secretWordList)-1)
+    secretWord = secretWordList[number]
+    return secretWord
 
     """
-    pass
+
 
 
 def word_is_solved(word, guesses):
