@@ -191,6 +191,8 @@ def get_blanked_word(word, guesses):
     Args:
         word (str): The secret word
         guesses (str): A string of correct guesses
+    Returns:
+        str: blanked word
     """
     letters = list(word)
     guesses = list(set(guesses))
