@@ -1,3 +1,16 @@
+def show_title_screen():
+    """Will display ASCII art for a title screen"""
+    print(" __ __       ____      ____        ____      ___ ___       ____      ____  ")
+    print("|  |  |     /    |    |    \      /    |    |   |   |     /    |    |    \ ")
+    print("|  |  |    |  o  |    |  _  |    |   __|    | _   _ |    |  o  |    |  _  |")
+    print("|  _  |    |     |    |  |  |    |  |  |    |  \_/  |    |     |    |  |  |")
+    print("|  |  |    |  _  |    |  |  |    |  |_ |    |   |   |    |  _  |    |  |  |")
+    print("|  |  |    |  |  |    |  |  |    |     |    |   |   |    |  |  |    |  |  |")
+    print("|__|__|    |__|__|    |__|__|    |___,_|    |___|___|    |__|__|    |__|__|")
+                                                                           
+
+
+
 def main():
     secret_word = get_secret_word()
     correct_guesses = ""
