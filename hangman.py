@@ -38,7 +38,18 @@ def word_is_solved(word, guesses):
     Returns:
         bool: True if word is solved, False if word is not.
     """
-    pass
+    total = 0  # number of guessed characters in word
+
+    for guess in guesses:
+        # Number of guesses[i] in word
+        num = word.count(guess)
+        if num > 0:
+            total += num
+    if total == len(word):
+        return True
+    else:
+        return False
+
 
 
 def player_is_dead(wrong_guesses):
@@ -75,8 +86,6 @@ def display_platform(wrong_guesses):
              |
     _________|_______
     """
-
-
 
     one_incorrect = """
     _________
