@@ -69,6 +69,7 @@ def player_is_dead(wrong_guesses):
     else:
         return False
 
+
 def display_platform(wrong_guesses):
     """
     Displays (prints) hanging platform based on how many incorrect guesses.
