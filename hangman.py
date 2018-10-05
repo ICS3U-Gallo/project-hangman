@@ -58,7 +58,7 @@ def player_is_dead(wrong_guesses):
     Returns
         bool: True if dead, False otherwise
     """
-    return len(wrong_guesses) >= 6:
+    return len(wrong_guesses) >= 6
  
 
 def display_platform(wrong_guesses):
@@ -138,13 +138,13 @@ def display_letters(word, guesses):
 
 def get_guess():
     """Will take the user's guess. Ensures the input is valid."""
-        while True:
-            letter = input('Enter a letter:').lower()
+    while True:
+        letter = input('Enter a letter:').lower()
 
-            if letter.isalpha() and len(letter) == 1:
-                return letter
+        if letter.isalpha() and len(letter) == 1:
+            return letter
 
-            print('Character is invalid. ',end='')
+        print('Character is invalid. ',end='')
 
     
     
