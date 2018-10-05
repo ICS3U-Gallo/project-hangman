@@ -141,10 +141,11 @@ def get_guess():
     validity = False
     while validity == False:
         letter = input('Enter a letter:')
-        if letter in "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM" and len(letter) == 1:
+  
+        if letter.isalpha() and len(letter) == 1:
             validity = True
         else:
-            print('Character is invalid. ', end='')
+            print('Character is invalid. ',end='')
     
         if validity == True:
             return letter
