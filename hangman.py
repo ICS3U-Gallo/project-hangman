@@ -174,6 +174,7 @@ def display_platform(wrong_guesses):
     elif num_wrong_attempts == 6:  
         print(six_incorrect)
 
+        
 def display_letters(word, guesses):
     """Displays (prints) the letter-board,
     underscores (_) for letters not yet guessed.
