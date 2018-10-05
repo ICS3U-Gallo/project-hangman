@@ -50,8 +50,8 @@ def word_is_solved(word, guesses):
         bool: True if word is solved, False if word is not.
     """
 
-    for letter in word:
-        if letter not in guesses:
+    for letter in word.lower():
+        if letter not in guesses and letter != ' ':
             return False
 
     return True
