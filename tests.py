@@ -20,7 +20,10 @@ def test_word_is_solved():
 
 def test_display_letters():
     assert display_letters("hello", "h") == "h _ _ _ _", "Should reveal only first letter"
-    assert display_letters("hello", "hello") == "h e l l o", "Should reveal entire word"
+    assert display_letters("hello", "he") == "h e _ _ _", "Should reveal first and second letters"
+    assert display_letters("hello", "heo") == "h e _ _ o", "Should reveal first, second, and last letters"
+    assert display_letters("hello", "hoel") == "h e l l o", "Should reveal all letters"    
+    assert display_letters("he l lo", "hoel") == "h e   l   l o", "Should reveal all letters" 
     assert display_letters("hello", "wptrk") == "_ _ _ _ _", "Should reveal nothing of the word"
     assert display_letters("hello john", "hlljoenh") == "h e l l o   j o h n", "Should reveal whole phrase"
     assert display_letters("hello john", "eljh") == "_ e l l _   j _ h _", "Should reveal most characters"
