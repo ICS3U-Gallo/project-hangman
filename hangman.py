@@ -51,7 +51,7 @@ def word_is_solved(word, guesses):
     """
 
     for letter in word.lower():
-        if letter not in guesses or letter != ' ':
+        if letter not in guesses and letter != ' ':
             return False
 
     return True
