@@ -14,6 +14,8 @@ def test_word_is_solved():
     # Multiple occurences of letter
     assert word_is_solved("aaaabbbb", "ab") == True, "Should be solved: 'ab' for word 'aaaabbbb'."
     assert word_is_solved("aaabbbccc", "bc") == False, "Should not be solved: 'bc' for word 'aaabbbccc'"
+    # Multiple words
+    assert word_is_solved("aaabb bcc c", "abc") == True, "Should solve multiple words."
     # Multiple words, mixed case
     assert word_is_solved("CaPiTaL lEtTeRs", "capitlers") == True, "Should be solved: 'capitlers' for word 'CaPiTaL lEtTeRs'."
     assert word_is_solved("UPPER lower", "uper") == False, "Should not be solved: 'uper' for word 'UPPER lower'."
