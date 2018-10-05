@@ -24,6 +24,7 @@ def test_display_letters():
     assert display_letters("hello", "he") == "h e _ _ _", "Should reveal first and second letters"
     assert display_letters("hello", "heo") == "h e _ _ o", "Should reveal first, second, and last letters"
     assert display_letters("hello", "hoel") == "h e l l o", "Should reveal all letters"    
+    assert display_letters("he l lo", "hoel") == "h e   l   l o", "Should reveal all letters" 
 
 
 def test_display_platform():
