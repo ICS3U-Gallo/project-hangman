@@ -64,7 +64,6 @@ def player_is_dead(wrong_guesses):
     Returns
         bool: True if dead, False otherwise
     """
-def player_is_dead(wrong_guesses):
     if wrong_guesses >= 5:
         return True
     else:
