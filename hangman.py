@@ -2,6 +2,7 @@
 
 
 def main():
+    show_title_screen()
     secret_word = get_secret_word()
     correct_guesses = ""
     wrong_guesses = ""
