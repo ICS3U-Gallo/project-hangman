@@ -9,7 +9,7 @@ def main():
     while (not word_is_solved(secret_word, correct_guesses) and
             not player_is_dead(wrong_guesses)):
         display_platform(wrong_guesses)
-        display_letters(secret_word, correct_guesses)
+        print(get_blanked_word(secret_word, correct_guesses))
         guess = get_guess()
 
         if len(guess) > 1:
