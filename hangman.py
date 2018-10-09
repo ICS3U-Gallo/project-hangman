@@ -174,16 +174,37 @@ def display_platform(wrong_guesses):
     elif num_wrong_attempts == 6:  
         print(six_incorrect)
 
-
+        
 def display_letters(word, guesses):
     """Displays (prints) the letter-board,
     underscores (_) for letters not yet guessed.
-
     Args:
         word (str): The secret word
         guesses (str): A string of correct guesses
     """
-    pass
+    guessed_word = ""
+    counter = 1
+    if guessed_word == "":
+        guessed_word = "_ " * len(word)
+    for i in range(len(guesses)):
+        if word.count(guesses[i]) > 1:
+            index = word.find(guesses[i])
+            for j in range(word.count(guesses[i])):
+                slice1 = guessed_word[ : index * 2]
+                slice2 = guessed_word[index * 2: ]
+                replaced = slice2.replace("_", guesses[i], 1)
+                guessed_word = slice1 + replaced
+                if word.count(guesses[i]) > 1:
+                    replaced = word.replace(guesses[i], "*", counter)
+                    index = replaced.find(guesses[i])
+                counter += 1
+        elif word.count(guesses[i]) == 1:
+            index = word.find(guesses[i])
+            slice1 = guessed_word[ : index * 2]
+            slice2 = guessed_word[index * 2 : ]
+            replaced = slice2.replace("_", guesses[i], 1)
+            guessed_word = slice1 + replaced
+return guessed_word
 
 
 def get_guess():
