@@ -6,7 +6,7 @@ def test_get_secret_word():
     assert len(words) >= 5, "Should contain a list of at least 5 words."
     
     # do the following:
-    assert what secret word returns is a string, "Should return a string"
+    # assert what secret word returns is a string, "Should return a string"
 
 
 def test_word_is_solved():
