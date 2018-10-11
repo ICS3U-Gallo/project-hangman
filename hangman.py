@@ -21,12 +21,11 @@ def main():
 
 
 def get_secret_word():
-    """Will return a single word from a list of words.
-
-    Returns:
-        Single word from a list
-    """
-    pass
+    import random
+    secretWordList = ['hello', 'turtle', 'potato', 'water', 'turnip', 'magic', 'cow', 'champion', 'return', 'computer']
+    number = random.randint(0,len(secretWordList)-1)
+    secretWord = secretWordList[number]
+    return secretWord
 
 
 def word_is_solved(word, guesses):
