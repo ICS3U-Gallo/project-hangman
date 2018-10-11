@@ -63,3 +63,4 @@ print(add(4, 6))  # you get 10
 
 ### Strings
 Checkout [Snakify - Strings](https://snakify.org/en/lessons/strings_str/). You will need to be aware of what you can do with strings.
+
