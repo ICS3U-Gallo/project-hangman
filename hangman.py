@@ -48,6 +48,7 @@ def word_is_solved(word, guesses):
     """
     pass
 
+    return set(word.replace(' ', '')) <= set(guesses)
 
 def player_is_dead(wrong_guesses):
     """Determines if the player is dead (too many guesses).
