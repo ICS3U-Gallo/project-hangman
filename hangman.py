@@ -64,7 +64,10 @@ def player_is_dead(wrong_guesses):
     Returns
         bool: True if dead, False otherwise
     """
-    pass
+    if len(wrong_guesses) >= 5:
+	    return True
+    else:
+	    return False
 
 
 def display_platform(wrong_guesses):
