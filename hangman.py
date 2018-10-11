@@ -8,16 +8,11 @@ def main():
         display_platform(wrong_guesses)
         display_letters(secret_word, correct_guesses)
         guess = get_guess()
-
-        # HANDLE GUESS
-        # if guess is in the word, the add it to the correct guesses
-        # otherwise, add it to the incorrect guesses
    
         if guess in secret_word:
             correct_guesses += guess
         else:
             wrong_guesses += guess
-
 
     if word_solved(secret_word, correct_guesses):
         show_win_screen()
